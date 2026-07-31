@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小窗回复助手 · 关于与隐私政策</title>
+<style>
+  :root{
+    --brand:#ff2442;
+    --ink:#1f1f1f;
+    --muted:#6b6b6b;
+    --bg:#fff;
+    --soft:#fff5f6;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--ink);background:#fafafa;line-height:1.7;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  header{text-align:center;padding:24px 0 8px}
+  .logo{
+    width:84px;height:84px;border-radius:22px;background:var(--brand);
+    display:flex;align-items:center;justify-content:center;margin:0 auto 14px;
+    color:#fff;font-size:34px;font-weight:700;box-shadow:0 8px 24px rgba(255,36,66,.28);
+  }
+  h1{font-size:26px;margin:6px 0 4px}
+  .sub{color:var(--muted);font-size:15px;margin:0}
+  .card{
+    background:var(--bg);border:1px solid #eee;border-radius:16px;
+    padding:22px 22px;margin:18px 0;box-shadow:0 2px 10px rgba(0,0,0,.03);
+  }
+  h2{font-size:19px;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+  h2::before{content:"";width:4px;height:18px;background:var(--brand);border-radius:3px;display:inline-block}
+  h3{font-size:16px;margin:16px 0 6px;color:var(--ink)}
+  .muted{color:var(--muted);font-size:14px}
+  p{margin:8px 0;color:#333}
+  ul{margin:8px 0;padding-left:20px}
+  li{margin:6px 0;color:#333}
+  .features{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .features div{background:var(--soft);border-radius:12px;padding:12px 14px;font-size:14px}
+  .donate{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  .donate img{border:1px solid #eee;border-radius:14px;background:#fff;padding:8px}
+  .donate .tip{font-size:13px;color:var(--muted);max-width:320px}
+  .nav{display:flex;gap:18px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+  .nav a{color:var(--brand);text-decoration:none;font-size:14px;font-weight:600;border:1px solid var(--brand);padding:6px 14px;border-radius:20px;transition:.15s}
+  .nav a:hover{background:var(--brand);color:#fff}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
+  code{background:#f1f1f1;padding:1px 6px;border-radius:6px;font-size:13px}
+  @media(max-width:560px){.features{grid-template-columns:1fr}.donate{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">窗</div>
+    <h1>小窗回复助手</h1>
+    <p class="sub">点一下插件图标，在屏幕角落开一个干净的小窗看小红书私信——不抢当前页面，看完即关。</p>
+    <nav class="nav">
+      <a href="#about">关于</a>
+      <a href="#privacy">隐私政策</a>
+      <a href="#donate">请喝咖啡</a>
+    </nav>
+  </header>
+
+  <!-- 功能介绍 -->
+  <section class="card" id="about">
+    <h2>它是什么</h2>
+    <p>一个轻量的浏览器扩展（Chrome / Edge 可直接安装）。点插件图标会在你当前浏览器窗口的右上角弹出一个<strong>手机比例的小窗</strong>，专门用来刷小红书网页版消息。它有几个"不打扰你"的特殊设计：</p>
+    <div class="features">
+      <div>📐 固定手机比例，小屏不挡事</div>
+      <div>🔒 锁定位置与尺寸，不乱跑</div>
+      <div>💬 未读角标：红圆铺满图标 + 白字</div>
+      <div>🌐 任意小红书页面自动刷新未读</div>
+      <div>↪️ 「转到网页版」一键跳出全屏聊</div>
+      <div>🚫 小窗内拦截底部导航误触</div>
+      <div>🪟 小窗失焦自动关闭</div>
+      <div>🔄 后台静默轮询未读（无需开网页）</div>
+      <div>🧩 禁止多开，仅一个小窗</div>
+    </div>
+
+    <h3>小窗自动关闭</h3>
+    <p>小窗打开后，只要你点击小窗<strong>以外的任意位置</strong>——切到别的窗口、回到桌面、点开其他程序——小窗都会<strong>自动关闭</strong>，绝不占用注意力，也不会在后台残留进程。</p>
+
+    <h3>后台静默轮询</h3>
+    <p>为了让"未读角标"和"新私信通知"即使你不打开小窗、也<strong>不打开任何网页</strong>时都保持最新，扩展会在后台静默轮询小红书的私信未读接口——完全<strong>不需要常驻任何标签页</strong>，对你不可见、不占用任何窗口。轮询周期为 <strong>10 秒</strong>：一旦发现新私信，立即更新角标并在屏幕右下角弹出桌面通知。整个过程发生在浏览器本地，不打开、不显示任何页面。</p>
+
+    <h3>禁止多开</h3>
+    <p>无论点多少次插件图标，扩展都只会保留<strong>唯一一个小窗</strong>；若已打开，再次点击只会把它聚焦，而不会叠加多个窗口。</p>
+  </section>
+
+  <!-- 隐私政策 -->
+  <section class="card" id="privacy">
+    <h2>隐私政策</h2>
+    <p class="muted">生效日期：2026 年 7 月。小窗回复助手（以下简称"本扩展"）尊重并保护您的隐私。本政策说明本扩展如何处理信息。</p>
+
+    <h3>1. 我们收集什么</h3>
+    <p>本扩展<strong>不收集、不存储、不上传</strong>任何您的个人信息或浏览数据：</p>
+    <ul>
+      <li>不会将您的任何数据发送到开发者服务器或任何第三方；</li>
+      <li>不会植入追踪器、分析脚本或广告 SDK。</li>
+    </ul>
+
+    <h3>2. 未读数的读取方式</h3>
+    <p>为在插件图标上显示未读消息数量，本扩展会在后台周期性地向小红书私信未读接口发起请求（依赖您已登录的会话 Cookie），读取未读消息的<strong>数字</strong>。该请求：</p>
+    <ul>
+      <li>发生在您的浏览器本地，<strong>不离开您的设备</strong>；</li>
+      <li>不包含任何消息内容，仅为数字；</li>
+      <li>不需要打开任何网页或标签页，完全在后台进行；</li>
+      <li>不会上传、不会用于任何分析或画像。</li>
+    </ul>
+
+    <h3>3. 权限说明</h3>
+    <ul>
+      <li><code>windows</code> / <code>storage</code>：用于打开小窗、在本地保存未读数字等偏好；</li>
+      <li><code>system.display</code>：用于按屏幕信息计算小窗尺寸；</li>
+      <li><code>alarms</code>：用于后台每 10 秒周期性拉取未读；</li>
+      <li><code>notifications</code>：用于弹出新私信的桌面通知；</li>
+      <li><code>tabGroups</code>：仅用于升级时一次性清理旧版本遗留的标签分组，之后不再创建任何分组；</li>
+      <li>主机权限 <code>*://*.xiaohongshu.com/*</code>：用于读取私信未读接口与打开小窗。</li>
+    </ul>
+
+    <h3>4. 第三方服务</h3>
+    <p>本扩展<strong>仅与小红书自身服务器</strong>（xiaohongshu.com / edith.xiaohongshu.com）通信，用于读取私信未读数字；<strong>不调用</strong>任何其他第三方服务、不植入任何外部追踪器。</p>
+  </section>
+
+  <!-- 请喝咖啡（置于最后） -->
+  <section class="card" id="donate">
+    <h2>请我喝杯咖啡 ☕</h2>
+    <p>这个插件完全免费、无广告打扰你的使用。如果它真的帮你省了点事，欢迎用支付宝扫码请作者喝杯咖啡，作为持续维护的小小鼓励～</p>
+    <div class="donate">
+      <img src="alipay-qr.jpg" width="240" height="240" alt="支付宝收款码">
+      <div class="tip">
+        <p><strong>支付宝扫码</strong></p>
+        <p>你的每一份支持都是作者继续打磨这个小工具的动力，谢谢你 ❤️</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>小窗回复助手 · 关于与隐私政策 · 本页由作者自发托管，与小红书官方无关</p>
+    <p>© 2026 小窗回复助手</p>
+  </footer>
+
+</div>
+</body>
+</html>
